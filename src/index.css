@@ -94,7 +94,8 @@ main { min-height: 100vh; text-align: center; }
   backdrop-filter: blur(14px);
 }
 
-.navbar .brand { display: flex; align-items: center; margin-right: auto; color: #f5c451; font-size: 1rem; font-weight: 800; letter-spacing: .04em; white-space: nowrap; }
+.navbar .brand { display: flex; align-items: center; margin-right: auto; }
+.navbar .brand img { display: block; width: 138px; height: 44px; object-fit: contain; object-position: left center; }
 .nav-links { display: flex; gap: 18px; }
 .menu-toggle { display: none; border: 0; background: transparent; cursor: pointer; }
 .menu-toggle span { display: block; width: 24px; height: 2px; margin: 5px 0; background: #35d6ff; transition: transform .2s, opacity .2s; }
@@ -135,7 +136,8 @@ main { min-height: 100vh; text-align: center; }
 @media (max-width: 600px) {
   html { scroll-padding-top: 104px; }
   .navbar { flex-wrap: wrap; gap: 0; padding: 8px 18px; }
-  .navbar .brand { width: auto; margin: 0; font-size: .9rem; }
+  .navbar .brand { width: auto; margin: 0; }
+  .navbar .brand img { width: 112px; height: 36px; }
   .menu-toggle { display: block; position: absolute; top: 13px; right: 18px; padding: 5px; }
   .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .menu-toggle.open span:nth-child(2) { opacity: 0; }

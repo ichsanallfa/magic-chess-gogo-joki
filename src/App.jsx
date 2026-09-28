@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Home from './pages/Home.jsx'
+import brandLogo from './assets/asset logo mcgg.png'
 import './App.css'
 
 const sections = ['home', 'services', 'proof', 'faq']
@@ -32,7 +33,7 @@ function App() {
     <main>
       <nav className="navbar">
         <a className="brand" href="#home" aria-label="Magic Chess GoGo">
-          Magic Chess
+          <img src={brandLogo} alt="Magic Chess GoGo" />
         </a>
         <button
           className={`menu-toggle ${menuOpen ? 'open' : ''}`}
