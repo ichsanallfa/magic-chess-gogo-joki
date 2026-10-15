@@ -1,4 +1,7 @@
 import heroArtwork from '../assets/asset mcg.jpg'
+import Services from './Services.jsx'
+import Calculator from './Calculator.jsx'
+import Proof from './Proof.jsx'
 
 export default function Home() {
   return (
@@ -13,8 +16,9 @@ export default function Home() {
           <a className="hero-cta" href="#services">Lihat Layanan</a>
         </div>
       </section>
-      <section className="page" id="services"><h1>Services</h1><p>Layanan joki akan ditambahkan di tahap berikutnya.</p></section>
-      <section className="page" id="proof"><h1>Proof</h1><p>Gallery bukti akan ditambahkan di tahap berikutnya.</p></section>
+      <Services />
+      <Calculator />
+      <Proof />
       <section className="page" id="faq"><h1>FAQ</h1><p>FAQ akan ditambahkan di tahap berikutnya.</p></section>
     </>
   )

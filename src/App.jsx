@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import Home from './pages/Home.jsx'
-import brandLogo from './assets/asset logo mcgg.png'
-import './App.css'
+import brandLogo from './assets/Logo.png'
 
-const sections = ['home', 'services', 'proof', 'faq']
+const sections = ['home', 'services', 'calculator', 'proof', 'faq']
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
